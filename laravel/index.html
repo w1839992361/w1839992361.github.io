@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laravel Development Tutorial</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div class="sidebar">
+            <ul>
+                <h3>开始</h3>
+                <li><a href="#getting-started">简介</a></li>
+                <li><a href="#installing-laravel">Installing Laravel</a></li>
+                <li><a href="#setting-up-environment">Setting up the Development Environment</a></li>
+                <li><a href="#creating-project">Creating a New Laravel Project</a></li>
+                <li><a href="#next-steps">Next Steps</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>欢迎使用Laravel开发教程！</h1>
+            <p>这是一个关于如何使用Laravel框架开发web应用程序的综合教程。</p>
+
+            <h2 id="getting-started">快速上手</h2>
+            <p>Lravel 目录介绍:</p>
+            <img  src="./img/mulu.png" alt="laravel 目录图片介绍">
+            <ol>
+                <li>其中app目录是程序的核心代码，包括控制器、模型、服务提供者等；</li>
+                <li>config 目录是包括应用程序的配置文件，例如 数据库、缓存、邮件</li>
+                <li>database 目录包括数据相关的文件，例如迁移文件、种子文件等；</li>
+                <li>public 目录包括公共文件，例如前端资源、入口文件等；</li>
+                <li>resources 目录包含了视图文件和原生资源文件js css 本地化语言文件...；</li>
+                <li>routes 目录包含了所有的路由定义，常用的就两种 web.php 和 api.php；</li>
+                <div>
+                    <p>web.php：文件包含的路由都会应用在web中间件组，具备了session、CSRF防护以及Cookie加密，这里就是前后端不分离的那种。</p>
+                    <p>api.php：文件包含的路由都会应用在api中间件组，具备频率限制功能，这里可以通过token认证，但是无法访问session状态，这里就是前后端分离的接口。</p>
+                </div>
+                <li>storage 目录包含了通过编译后的blade模板、基于文件的session、文件缓存以及其他由框架生成的文件</li>
+                <div>
+                    <p>app目录用于存放应用要使用的文件，里面的public目录用于用户存储的文件，例如上传的图片资源等 <br>
+                        如果想要这些文件被访问，还需要在public目录下生成一个软连接指向这个目录。使用者可以通过php artisan storage:link命令生成这个软连接</p>
+                    <p>framework目录用于存放框架生成的文件和缓存</p>
+                    <p>logs目录用于存放日志文件</p>
+                </div>
+                <li>tests 目录包含自动化测试的文件，其中提供了一个开箱即用的PHPUnit示例；每一个测试类都要以Test开头，使用者可以通过phpunit或php vendor/bin/phpunit命令来运行测试;</li>
+                <li>vendor 目录包含所有Composer依赖</li>
+            </ol>
+            <br><br><br><br><br><br><br><br><br><br>
+            <h2 id="installing-laravel">Installing Laravel</h2>
+            <p>To install Laravel, you can use Composer, the PHP dependency management tool.</p>
+            <pre><code>$ composer global require laravel/installer</code></pre>
+
+            <h2 id="setting-up-environment">Setting up the Development Environment</h2>
+            <p>Before you start developing with Laravel, make sure you have the following:</p>
+            <ul>
+                <li>PHP >= 7.4</li>
+                <li>Composer</li>
+                <li>MySQL or SQLite</li>
+            </ul>
+
+            <h2 id="creating-project">Creating a New Laravel Project</h2>
+            <p>Once you have installed Laravel and set up your development environment, you can create a new Laravel
+                project using the following command:</p>
+            <pre><code>
+                
+            </code></pre>
+
+            <h2 id="next-steps">Next Steps</h2>
+            <p>Now that you have created your Laravel project, you can start developing your web application. Refer to
+                the Laravel documentation for more detailed information on how to use Laravel features and components.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
