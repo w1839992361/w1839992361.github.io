@@ -29,7 +29,7 @@
 
             <h2 id="getting-started">快速上手</h2>
             <p>Lravel 目录介绍:</p>
-            <img  src="./img/mulu.png" alt="laravel 目录图片介绍">
+            <img src="./img/mulu.png" alt="laravel 目录图片介绍">
             <ol>
                 <li>其中app目录是程序的核心代码，包括控制器、模型、服务提供者等；</li>
                 <li>config 目录是包括应用程序的配置文件，例如 数据库、缓存、邮件</li>
@@ -48,13 +48,26 @@
                     <p>framework目录用于存放框架生成的文件和缓存</p>
                     <p>logs目录用于存放日志文件</p>
                 </div>
-                <li>tests 目录包含自动化测试的文件，其中提供了一个开箱即用的PHPUnit示例；每一个测试类都要以Test开头，使用者可以通过phpunit或php vendor/bin/phpunit命令来运行测试;</li>
+                <li>tests 目录包含自动化测试的文件，其中提供了一个开箱即用的PHPUnit示例；每一个测试类都要以Test开头，使用者可以通过phpunit或php
+                    vendor/bin/phpunit命令来运行测试;</li>
                 <li>vendor 目录包含所有Composer依赖</li>
+                <li>.env 文件主要是设置一些系统相关的环境配置文件信息</li>
             </ol>
-            <br><br><br><br><br><br><br><br><br><br>
-            <h2 id="installing-laravel">Installing Laravel</h2>
-            <p>To install Laravel, you can use Composer, the PHP dependency management tool.</p>
-            <pre><code>$ composer global require laravel/installer</code></pre>
+            <h2 id="installing-laravel">安装 Laravel</h2>
+            <p>你可以使用Composer或者用laravel一键安装包</p>
+            <ol>
+                <li>composer安装</li>
+                <pre><code>$ composer global require laravel/installer</code></pre>
+                <li>laravel一键安装包（比赛的时候就会给一个离线的laravel包）</li>
+                <!-- xampp安装包下载 -->
+                <a href="./files/xampp-windows-x64-8.2.12-0-VS16-installer.exe" download>Xampp安装包下载 (8.2.12版本)</a>
+                <br>
+                <!-- laravel包下载 -->
+                <a href="./files/laravel.zip" download>laravel包下载 (10.10版本)</a>
+                <br>
+                <!-- 框架库下载 -->
+                <a href="./files/框架库.zip" download>框架库下载 (提供的框架库包)</a>
+            </ol>
 
             <h2 id="setting-up-environment">Setting up the Development Environment</h2>
             <p>Before you start developing with Laravel, make sure you have the following:</p>
